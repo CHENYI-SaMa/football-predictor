@@ -1,0 +1,42 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Build outputs
+build/
+dist/
+*.exe
+*.spec
+
+# Data caches (large files)
+data/jczq_cache/
+data/jczq_history_raw/
+data/injuries/
+data_v4/
+*.pkl
+*.pkl.*
+
+# Output files
+outputs/
+备份/
+打包信息.txt
+安装说明_*.txt
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

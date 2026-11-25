@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩预测助手 · V3</title>
+<style>
+  :root {
+    --bg: #F5F5F7;
+    --sidebar: rgba(246,246,248,0.92);
+    --card: #FFFFFF;
+    --border: rgba(0,0,0,0.08);
+    --text-1: #1D1D1F;
+    --text-2: #86868B;
+    --text-3: #AEAEB2;
+    --blue: #007AFF;
+    --red: #FF3B30;
+    --green: #34C759;
+    --yellow: #FFCC00;
+    --orange: #FF9500;
+    --purple: #AF52DE;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+    --font: -apple-system, "SF Pro Text", "PingFang SC", "Microsoft YaHei UI", "Segoe UI", sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; font-family:var(--font); }
+  body { background:#C7C7CC; display:flex; justify-content:center; align-items:center;
+         min-height:100vh; padding:28px; }
+  .window { width:1120px; height:700px; background:var(--bg); border-radius:14px;
+            overflow:hidden; display:flex; flex-direction:column;
+            box-shadow:0 0 0 .5px rgba(0,0,0,.12), 0 20px 60px rgba(0,0,0,.28); }
+  /* 顶栏 */
+  .titlebar { display:flex; align-items:center; gap:14px; padding:12px 18px;
+              background:linear-gradient(180deg,#FAFAFC,rgba(250,250,252,.9));
+              border-bottom:1px solid var(--border); user-select:none; }
+  .traffic { display:flex; gap:8px; }
+  .dot { width:12px; height:12px; border-radius:50%;
+         box-shadow:inset 0 -1px 1px rgba(0,0,0,.15); }
+  .dot.red{ background:var(--red);} .dot.yellow{ background:var(--yellow);} .dot.green{ background:var(--green);}
+  .app-title { font-size:13px; font-weight:600; color:var(--text-1); }
+  .spacer { flex:1; }
+  .search { display:flex; align-items:center; gap:6px; background:rgba(120,120,128,.12);
+            border-radius:8px; padding:5px 12px; width:190px; color:var(--text-3); font-size:13px; }
+  .btn { display:flex; align-items:center; gap:6px; font-size:13px; font-weight:500;
+         padding:6px 14px; border-radius:8px; border:1px solid rgba(0,0,0,.1);
+         background:linear-gradient(180deg,#fff,#F0F0F2); color:var(--text-1); cursor:pointer; }
+  .btn:hover{ background:linear-gradient(180deg,#fff,#E8E8EA); }
+  .btn.primary{ background:var(--blue); color:#fff; border:none; }
+  .btn.primary:hover{ background:#0A84FF; }
+  /* 主体 */
+  .body { flex:1; display:flex; overflow:hidden; }
+  .sidebar { width:250px; background:var(--sidebar); border-right:1px solid var(--border);
+             padding:12px 10px; overflow-y:auto; }
+  .side-group { margin-bottom:10px; }
+  .side-head { display:flex; align-items:center; gap:6px; font-size:13px; font-weight:500;
+               color:var(--text-1); padding:5px 8px; cursor:pointer; border-radius:6px; }
+  .side-head:hover{ background:rgba(0,0,0,.04); }
+  .side-head .arrow { font-size:9px; transition:transform .2s; display:inline-block; }
+  .side-head.open .arrow{ transform:rotate(90deg); }
+  .match-item { display:flex; align-items:center; gap:8px; padding:7px 8px; border-radius:8px;
+                font-size:13px; color:var(--text-1); cursor:pointer; }
+  .match-item:hover{ background:rgba(0,0,0,.05); }
+  .match-item.active{ background:var(--blue); color:#fff; }
+  .match-item .no { font-size:11px; font-weight:600; opacity:.7; width:38px; }
+  .match-item .teams { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .match-item .rang { font-size:10px; background:rgba(0,0,0,.08); padding:1px 5px; border-radius:4px; }
+  .match-item.active .rang{ background:rgba(255,255,255,.25); }
+  .date-item { display:flex; align-items:center; gap:8px; padding:6px 8px 6px 26px; border-radius:6px;
+               font-size:12.5px; color:var(--text-2); cursor:pointer; }
+  .date-item:hover{ background:rgba(0,0,0,.04); color:var(--text-1); }
+  .date-item .count { margin-left:auto; font-size:11px; color:var(--text-3); }
+  /* 内容区 */
+  .content { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+  .canvas { flex:1; padding:18px 20px 0; overflow-y:auto; }
+  .title-line { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .title-line .t { font-size:15px; font-weight:700; color:var(--text-1); }
+  .title-line .c { font-size:11px; font-weight:600; color:var(--blue);
+                    background:rgba(0,122,255,.1); padding:2px 8px; border-radius:6px; }
+  .mrow { display:flex; align-items:center; gap:12px; background:var(--card);
+          border:1px solid var(--border); border-radius:var(--radius); padding:10px 14px;
+          margin-bottom:6px; box-shadow:0 1px 2px rgba(0,0,0,.04); cursor:pointer;
+          transition:box-shadow .15s, transform .15s; }
+  .mrow:hover { box-shadow:0 2px 6px rgba(0,0,0,.08); transform:translateY(-1px); }
+  .mrow.open { border-color:var(--blue); box-shadow:0 0 0 3px rgba(0,122,255,.14); }
+  .mrow .no { width:52px; font-size:12px; font-weight:700; color:var(--blue); }
+  .mrow .teams { width:220px; font-size:13px; font-weight:600; color:var(--text-1);
+                 white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .mrow .meta { font-size:11px; color:var(--text-3); width:150px; }
+  .mrow .pick { flex:1; font-size:12.5px; color:var(--text-1); white-space:nowrap; }
+  .mrow .pick b { font-weight:700; }
+  .mrow .pick .bo { color:var(--text-2); }
+  .mrow .ht { width:130px; font-size:12px; color:var(--text-2); white-space:nowrap; }
+  .mrow .scores { width:90px; font-size:12.5px; font-weight:600; color:var(--text-1); }
+  .mrow .arrow { width:16px; height:16px; border-radius:50%; background:rgba(0,0,0,.06);
+                  display:flex; align-items:center; justify-content:center;
+                  font-size:10px; color:var(--text-2); transition:transform .2s; }
+  .mrow.open .arrow { transform:rotate(90deg); background:var(--blue); color:#fff; }
+  .badge { display:inline-block; font-size:10.5px; font-weight:700; padding:2px 7px;
+           border-radius:5px; margin-right:6px; }
+  .badge.rs{ background:rgba(52,199,89,.14); color:#248A3D; }
+  .badge.rp{ background:rgba(255,204,0,.18); color:#9A7D00; }
+  .badge.rf{ background:rgba(255,59,48,.12); color:#C42B25; }
+  .detail { display:none; background:#FAFAFC; border:1px solid var(--border);
+            border-radius:var(--radius); padding:16px 20px; margin:-2px 0 14px 0;
+            font-size:12.5px; line-height:1.7; color:var(--text-1);
+            white-space:pre-wrap; font-family:"SF Mono","Menlo",Consolas,monospace; }
+  .mrow.open + .detail { display:block; }
+  .bottom { padding:12px 20px 16px; display:flex; justify-content:center;
+            background:linear-gradient(180deg,transparent,rgba(0,0,0,.02)); }
+  .bottom .btn { font-size:14px; padding:10px 32px; border-radius:10px; font-weight:600; }
+  ::-webkit-scrollbar{ width:8px; } ::-webkit-scrollbar-thumb{ background:rgba(0,0,0,.18); border-radius:4px; }
+</style>
+</head>
+<body>
+<div class="window">
+
+  <!-- 顶栏 -->
+  <div class="titlebar">
+    <div class="traffic">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <div class="app-title">竞彩预测助手</div>
+    <div class="spacer"></div>
+    <div class="search">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      搜索比赛 / 编号
+    </div>
+    <div class="btn">刷新赛程</div>
+    <div class="btn primary">批量预测</div>
+  </div>
+
+  <div class="body">
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+      <div class="side-group">
+        <div class="side-head open"><span class="arrow">▶</span>今日赛程</div>
+        <div class="match-item active"><span class="no">周日001</span><span class="teams">东京绿茵 vs 川崎前锋</span><span class="rang">客让1</span></div>
+        <div class="match-item"><span class="no">周日002</span><span class="teams">长崎航海 vs 京都不死鸟</span><span class="rang">客让1</span></div>
+        <div class="match-item"><span class="no">周日003</span><span class="teams">山形山神 vs 枥木城</span><span class="rang">主让1</span></div>
+        <div class="match-item"><span class="no">周日004</span><span class="teams">鹿特丹斯巴达 vs 费耶诺德</span><span class="rang">客让1</span></div>
+        <div class="match-item"><span class="no">周日005</span><span class="teams">圣保利 vs 菲尔特</span><span class="rang">主让1</span></div>
+        <div class="match-item"><span class="no">周日010</span><span class="teams">格罗宁根 vs 乌德勒支</span><span class="rang">主让1</span></div>
+        <div class="match-item"><span class="no">周日015</span><span class="teams">海伦芬 vs 特温特</span><span class="rang">客让1</span></div>
+      </div>
+      <div class="side-group">
+        <div class="side-head open"><span class="arrow">▶</span>历史赛程</div>
+        <div class="date-item">2026-08-08 周六 <span class="count">25场</span></div>
+        <div class="date-item">2026-08-07 周五 <span class="count">10场</span></div>
+        <div class="date-item">2026-08-06 周四 <span class="count">18场</span></div>
+      </div>
+    </div>
+
+    <!-- 内容区 -->
+    <div class="content">
+      <div class="canvas">
+        <div class="title-line">
+          <span class="t">8月9日赛程赛事预测分析</span>
+          <span class="c">23场</span>
+        </div>
+
+        <div class="mrow open" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日001</span>
+          <span class="teams">东京绿茵 vs 川崎前锋</span>
+          <span class="meta">日职 · 客让1球 · 17:00</span>
+          <span class="pick"><span class="badge rs">让胜 79%</span>备选 让平 14.3%</span>
+          <span class="ht">胜胜46% 平胜16%</span>
+          <span class="scores">1:0 1:1</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【1】周日001  日职  08-09 17:00截止
+球队：东京绿茵  VS  川崎前锋
+让球：客让1球
+
+── 比分参考 ──
+最可能比分：1:0(客让1球)
+参考比分：1:0(13.4%)、1:1(10.8%)、2:0(10.6%)
+总进球：大2.5 48% / 小2.5 52%  ｜  预期进球：主 1.68 / 客 0.91
+
+── 赛果预测 ──
+胜平负：主胜 56% / 平 23%  ｜  主负 21%
+让球胜平负（客让1球后）：RS 让胜（79%）  ｜  备选 RP 让平 14.3%
+双P（半全场平平+让平）：暂不满足条件  ｜  半全场平平 10%，让平 14%
+
+── 综合分析 ──
+实力对比：主队东京绿茵预期进球 1.68 vs 客队川崎前锋 0.91，主队攻击端优势明显（差值 0.77）
+东京绿茵：近期战绩表现不稳定
+川崎前锋：近期战绩表现低迷
+市场分歧：模型让球胜 79% vs 让球盘 59%，模型明显看好主队，存在分歧机会
+让球分析：客让1球后模型主推 RS 让胜（79%）
+双P：让平概率仅 14%，暂不满足『平平+让平』条件
+比分判断：以 1:0(13.4%)、1:1(10.8%)、2:0(10.6%) 为主，主推让球赛果 RS 让胜（79%）</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日002</span>
+          <span class="teams">长崎航海 vs 京都不死鸟</span>
+          <span class="meta">日乙 · 客让1球 · 17:00</span>
+          <span class="pick"><span class="badge rs">让胜 84%</span>备选 让平 10.9%</span>
+          <span class="ht">胜胜51% 平胜20%</span>
+          <span class="scores">1:0 2:0</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【2】周日002  日乙  08-09 17:00截止
+球队：长崎航海  VS  京都不死鸟
+让球：客让1球
+
+── 比分参考 ──
+最可能比分：1:0(客让1球)
+参考比分：1:0(15.1%)、2:0(13.7%)、1:1(11.2%)
+预期进球：主 1.85 / 客 0.78  ｜  大2.5 52%
+
+── 赛果预测 ──
+胜平负：主胜 63% / 平 21%  ｜  主负 16%
+让球胜平负（客让1球后）：RS 让胜（84%）  ｜  备选 RP 让平 10.9%
+双P：暂不满足条件
+
+── 综合分析 ──
+实力对比：主队长崎航海预期进球 1.85 vs 客队 0.78，攻击端优势 1.07
+长崎航海：近期 5胜3平2负，进18球失10球
+京都不死鸟：近期 2胜4平4负，进9球失14球
+市场分歧：模型让球胜 84% vs 让球盘 62%，模型明显看好主队
+让球分析：客让1球后主推 RS 让胜（84%）
+比分判断：以 1:0、2:0、1:1 为主，主推让球赛果 RS 让胜（84%）</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日003</span>
+          <span class="teams">山形山神 vs 枥木城</span>
+          <span class="meta">日乙 · 主让1球 · 17:00</span>
+          <span class="pick"><span class="badge rf">让负 87%</span>备选 让平 7.9%</span>
+          <span class="ht">负负32% 平负25%</span>
+          <span class="scores">0:2 1:2</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【3】周日003  日乙  08-09 17:00截止
+球队：山形山神  VS  枥木城
+让球：主让1球
+...</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日005</span>
+          <span class="teams">圣保利 vs 菲尔特</span>
+          <span class="meta">德乙 · 主让1球 · 19:30</span>
+          <span class="pick"><span class="badge rf">让负 81%</span>备选 让平 12.1%</span>
+          <span class="ht">负负34% 平负27%</span>
+          <span class="scores">1:2 1:3</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【4】周日005  德乙  08-09 19:30截止
+球队：圣保利  VS  菲尔特
+让球：主让1球
+...</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日010</span>
+          <span class="teams">格罗宁根 vs 乌德勒支</span>
+          <span class="meta">荷甲 · 主让1球 · 20:00</span>
+          <span class="pick"><span class="badge rf">让负 87%</span>备选 让平 8.2%</span>
+          <span class="ht">负负36% 平负26%</span>
+          <span class="scores">0:2 1:2</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【5】周日010  荷甲  08-09 20:00截止
+...</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日018</span>
+          <span class="teams">波尔图 vs 阿尔维卡</span>
+          <span class="meta">葡超 · 主让2球 · 23:30</span>
+          <span class="pick"><span class="badge rf">让负 92%</span>备选 让平 5.4%</span>
+          <span class="ht">负负40% 平负23%</span>
+          <span class="scores">1:2 1:3</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【6】周日018  葡超  08-09 23:30截止
+...</div>
+
+        <div class="mrow" onclick="this.classList.toggle('open'); this.nextElementSibling.style.display=this.classList.contains('open')?'block':'none';">
+          <span class="no">周日023</span>
+          <span class="teams">桑托斯 vs 巴拉纳竞技</span>
+          <span class="meta">巴甲 · 主让1球 · 02:00</span>
+          <span class="pick"><span class="badge rf">让负 94%</span>备选 让平 4.6%</span>
+          <span class="ht">负负44% 平负22%</span>
+          <span class="scores">0:2 0:1</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="detail">【7】周日023  巴甲  08-09 02:00截止
+...</div>
+
+      </div>
+
+      <!-- 底部导出按钮 -->
+      <div class="bottom">
+        <div class="btn primary">导出推荐表</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

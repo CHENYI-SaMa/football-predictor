@@ -1,0 +1,52 @@
+竞彩足球预测系统 —— 源码版使用说明
+================================================
+
+一、运行环境
+  Windows 10/11，Python 3.12（安装时勾选 "Add python.exe to PATH"）
+  Python 下载：https://www.python.org/downloads/
+
+二、快速开始
+  1. 双击 start.bat（首次会自动安装依赖，约 1-3 分钟，需联网）
+  2. 启动后自动联网抓取当天竞彩赛程并逐场预测
+  3. 点卡片可展开完整分析（比分参考/胜平负/让球胜平负/半全场）
+  4. 底部「导出」生成 分析报告/精简版/推荐表 3 个文件到桌面
+
+三、核心功能
+  · 每日预测     ：打开软件自动抓赛程 + 预测（模型自动加载）
+  · 历史回看     ：左侧历史列表点日期查看往日预测，可「回填赛果」
+  · 每日核对     ：python daily_check.py  生成昨天核对表（Excel，四列独立着色）
+  · 每周重训     ：python retrain_weekly.py 自动抓数据→重训→验证→替换模型
+  · 置信度标注   ：主推概率 ≥70% 标 ★（高置信）
+
+四、命令行（在项目目录打开终端运行）
+  python gui.py                 启动界面
+  python daily_check.py         核对昨天（生成核对表到 桌面/竞彩预测/存档/）
+  python daily_check.py --date 20260810    核对指定日期
+  python batch_v2.py --day 08-11 --date 20260811   预测指定日期比赛并导出
+  python retrain_weekly.py      手动触发 自动回喂+重训（新增≥150场才训）
+
+五、数据与文件位置
+  · 存档目录    ：桌面/竞彩预测/存档/（预测JSON+核对表，历史记录数据源）
+  · 交付文件    ：桌面/竞彩预测/日期/（分析报告/精简版/推荐/核对表）
+  · 模型        ：models_v2/（让球胜平负）、models_hf/（半全场）
+  · 训练数据    ：data/jczq_history.csv（竞彩历史开奖，每周自动累积）
+  · 特征缓存    ：data/features.csv、data/master_table.csv（重训时自动重建）
+
+六、更新与扩展（开发模式）
+  本包为完整源码，可任意修改：
+  1. 改预测/界面：编辑 gui.py、predict.py、batch_v2.py 等
+  2. 重训模型    ：python retrain_weekly.py --force  （强制重训全部数据）
+  3. 打包安装版  ：python -m pip install pyinstaller
+                   python -m PyInstaller FootballPredictor.spec
+                   （参考 FootballPredictor.spec 与 install.iss）
+  4. 定时任务    ：（可选）用 WorkBuddy/计划任务每天 13:00 跑 daily_check.py，
+                   每周一 8:00 跑 retrain_weekly.py
+
+七、常见问题
+  Q: 打开软件没有比赛？
+  A: 当天赛程未开售或网络异常，稍后重试；缓存里已有数据会正常显示。
+  Q: 核对表显示"未开赛"？
+  A: 比赛尚未结束，第二天再核对（脚本会自动抓当天+前一天两个批次）。
+  Q: 依赖安装失败？
+  A: 检查网络；可手动运行：
+     python -m pip install -r requirements.txt

@@ -1,0 +1,382 @@
+{
+ "date": "2026-08-16",
+ "fetched_at": "2026-08-16 16:56:18",
+ "matches": [
+  {
+   "match_id": "1418874",
+   "no": "周日001",
+   "home": "德岛漩涡",
+   "away": "鸟栖沙岩",
+   "city": "Tokushima",
+   "lat": 34.06667,
+   "lon": 134.56667,
+   "elevation_m": 3.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T16",
+   "weather": {
+    "time": "2026-08-16T16:00",
+    "temp_c": 26.3,
+    "precip_prob": 91,
+    "wind_kmh": 14.2,
+    "weather_code": 51
+   }
+  },
+  {
+   "match_id": "1415860",
+   "no": "周日002",
+   "home": "海牙",
+   "away": "格罗宁根",
+   "city": "The Hague",
+   "lat": 52.07667,
+   "lon": 4.29861,
+   "elevation_m": 4.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T16",
+   "weather": {
+    "time": "2026-08-16T16:00",
+    "temp_c": 20.8,
+    "precip_prob": 0,
+    "wind_kmh": 11.2,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1373240",
+   "no": "周日003",
+   "home": "富川FC",
+   "away": "全北现代",
+   "city": "Bucheon",
+   "lat": 37.49889,
+   "lon": 126.78306,
+   "elevation_m": 14.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T16",
+   "weather": {
+    "time": "2026-08-16T16:00",
+    "temp_c": 25.6,
+    "precip_prob": 64,
+    "wind_kmh": 9.4,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1373222",
+   "no": "周日004",
+   "home": "仁川联",
+   "away": "金泉尚武",
+   "city": "Incheon",
+   "lat": 37.45646,
+   "lon": 126.70515,
+   "elevation_m": 43.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T16",
+   "weather": {
+    "time": "2026-08-16T16:00",
+    "temp_c": 25.3,
+    "precip_prob": 64,
+    "wind_kmh": 13.3,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1362738",
+   "no": "周日007",
+   "home": "佐加顿斯",
+   "away": "AIK索尔纳",
+   "city": "Stockholm",
+   "lat": 59.32938,
+   "lon": 18.06871,
+   "elevation_m": 17.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T18",
+   "weather": {
+    "time": "2026-08-16T18:00",
+    "temp_c": 22.6,
+    "precip_prob": 4,
+    "wind_kmh": 11.5,
+    "weather_code": 2
+   }
+  },
+  {
+   "match_id": "1415863",
+   "no": "周日008",
+   "home": "特温特",
+   "away": "兹沃勒",
+   "city": "Enschede",
+   "lat": 52.21833,
+   "lon": 6.89583,
+   "elevation_m": 45.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T18",
+   "weather": {
+    "time": "2026-08-16T18:00",
+    "temp_c": 22.6,
+    "precip_prob": 0,
+    "wind_kmh": 7.6,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1415862",
+   "no": "周日009",
+   "home": "费耶诺德",
+   "away": "前进之鹰",
+   "city": "Rotterdam",
+   "lat": 51.9225,
+   "lon": 4.47917,
+   "elevation_m": 9.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T18",
+   "weather": {
+    "time": "2026-08-16T18:00",
+    "temp_c": 21.9,
+    "precip_prob": 1,
+    "wind_kmh": 9.0,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1411691",
+   "no": "周日011",
+   "home": "阿森纳",
+   "away": "曼彻斯特城",
+   "city": "London",
+   "lat": 51.50853,
+   "lon": -0.12574,
+   "elevation_m": 25.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T20",
+   "weather": {
+    "time": "2026-08-16T20:00",
+    "temp_c": 25.9,
+    "precip_prob": 4,
+    "wind_kmh": 10.8,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1438062",
+   "no": "周日013",
+   "home": "葡萄牙国民",
+   "away": "埃斯托里尔",
+   "city": "Funchal",
+   "lat": 32.66568,
+   "lon": -16.92547,
+   "elevation_m": 280.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T20",
+   "weather": {
+    "time": "2026-08-16T20:00",
+    "temp_c": 22.7,
+    "precip_prob": 0,
+    "wind_kmh": 1.3,
+    "weather_code": 2
+   }
+  },
+  {
+   "match_id": "1415865",
+   "no": "周日016",
+   "home": "阿贾克斯",
+   "away": "海伦芬",
+   "city": "Amsterdam",
+   "lat": 52.37403,
+   "lon": 4.88969,
+   "elevation_m": 13.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T20",
+   "weather": {
+    "time": "2026-08-16T20:00",
+    "temp_c": 20.6,
+    "precip_prob": 0,
+    "wind_kmh": 10.1,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1427943",
+   "no": "周日018",
+   "home": "桑坦德竞技",
+   "away": "比利亚雷亚尔",
+   "city": "Santander",
+   "lat": 43.46589,
+   "lon": -3.80493,
+   "elevation_m": 1.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T21",
+   "weather": {
+    "time": "2026-08-16T21:00",
+    "temp_c": 22.8,
+    "precip_prob": 0,
+    "wind_kmh": 7.2,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1364316",
+   "no": "周日019",
+   "home": "莫尔德",
+   "away": "特罗姆瑟",
+   "city": "Molde",
+   "lat": 62.73752,
+   "lon": 7.15912,
+   "elevation_m": 3.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T21",
+   "weather": {
+    "time": "2026-08-16T21:00",
+    "temp_c": 11.5,
+    "precip_prob": 16,
+    "wind_kmh": 8.6,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1364337",
+   "no": "周日020",
+   "home": "布兰",
+   "away": "汉坎",
+   "city": "Bergen",
+   "lat": 60.39299,
+   "lon": 5.32415,
+   "elevation_m": 20.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T21",
+   "weather": {
+    "time": "2026-08-16T21:00",
+    "temp_c": 13.1,
+    "precip_prob": 1,
+    "wind_kmh": 13.3,
+    "weather_code": 1
+   }
+  },
+  {
+   "match_id": "1427941",
+   "no": "周日022",
+   "home": "西班牙人",
+   "away": "莱万特",
+   "city": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "elevation_m": 15.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T23",
+   "weather": {
+    "time": "2026-08-16T23:00",
+    "temp_c": 28.2,
+    "precip_prob": 0,
+    "wind_kmh": 1.1,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1438058",
+   "no": "周日023",
+   "home": "阿罗卡",
+   "away": "摩雷伦斯",
+   "city": "Arouca",
+   "lat": 40.93057,
+   "lon": -8.24488,
+   "elevation_m": 313.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-16T23",
+   "weather": {
+    "time": "2026-08-16T23:00",
+    "temp_c": 24.2,
+    "precip_prob": 0,
+    "wind_kmh": 5.4,
+    "weather_code": 0
+   }
+  },
+  {
+   "match_id": "1438059",
+   "no": "周日027",
+   "home": "布拉加",
+   "away": "吉维森特",
+   "city": "Braga",
+   "lat": 41.5514,
+   "lon": -8.42311,
+   "elevation_m": 190.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-17T01",
+   "weather": {
+    "time": "2026-08-17T01:00",
+    "temp_c": 22.7,
+    "precip_prob": 0,
+    "wind_kmh": 4.8,
+    "weather_code": 0
+   }
+  },
+  {
+   "match_id": "1362741",
+   "no": "周一002",
+   "home": "赫根",
+   "away": "哈尔姆斯塔德",
+   "city": "Gothenburg",
+   "lat": 57.70716,
+   "lon": 11.96679,
+   "elevation_m": 10.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-17T23",
+   "weather": {
+    "time": "2026-08-17T23:00",
+    "temp_c": 14.7,
+    "precip_prob": 2,
+    "wind_kmh": 6.5,
+    "weather_code": 0
+   }
+  }
+ ],
+ "missing": [
+  "布鲁马波卡纳(无城市映射)",
+  "代格福什(无城市映射)",
+  "奥勒松(无城市映射)",
+  "AC奥卢(无城市映射)",
+  "卡尔马(无城市映射)",
+  "哥德堡盖斯(无城市映射)",
+  "伯恩利(无城市映射)",
+  "萨尔普斯堡(无城市映射)",
+  "腓特烈斯塔(无城市映射)",
+  "瓦斯科达伽马(无城市映射)",
+  "法马利康(无城市映射)",
+  "纽约城(无城市映射)",
+  "赫尔辛基火花(无城市映射)",
+  "加的夫城(无城市映射)",
+  "拉科鲁尼亚(无城市映射)",
+  "卡萨皮亚(无城市映射)",
+  "巴西国际(无城市映射)"
+ ]
+}

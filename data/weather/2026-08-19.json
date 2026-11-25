@@ -1,0 +1,59 @@
+{
+ "date": "2026-08-19",
+ "fetched_at": "2026-08-19 16:55:50",
+ "matches": [
+  {
+   "match_id": "1427938",
+   "no": "周三002",
+   "home": "马德里竞技",
+   "away": "马拉加",
+   "city": "Madrid",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "elevation_m": 665.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-20T01",
+   "weather": {
+    "time": "2026-08-20T01:00",
+    "temp_c": 25.7,
+    "precip_prob": 0,
+    "wind_kmh": 4.4,
+    "weather_code": 3
+   }
+  },
+  {
+   "match_id": "1467681",
+   "no": "周四001",
+   "home": "迈季迈阿宽广",
+   "away": "利雅得新月",
+   "city": "Al Majma'ah",
+   "lat": 25.91097,
+   "lon": 45.35665,
+   "elevation_m": 712.0,
+   "venue_type": null,
+   "stadium": null,
+   "pitch": null,
+   "kickoff_approx": "2026-08-21T00",
+   "weather": {
+    "time": "2026-08-21T00:00",
+    "temp_c": 32.2,
+    "precip_prob": 0,
+    "wind_kmh": 10.7,
+    "weather_code": 0
+   }
+  }
+ ],
+ "missing": [
+  "安养FC(无城市映射)",
+  "波特诺山丘(无城市映射)",
+  "纽约红牛(无城市映射)",
+  "科罗拉多急流(无城市映射)",
+  "凯尔特人(无城市映射)",
+  "奈梅亨(无城市映射)",
+  "布拉迪斯拉发(无城市映射)",
+  "巴列卡诺(无城市映射)",
+  "科林蒂安(无城市映射)"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "n_train": 4676,
+  "n_val": 293,
+  "n_test": 5022,
+  "rho": 0.06,
+  "ll_model": 1.0450580598071835,
+  "ll_base": 1.2242484362940447,
+  "brier_model": 0.6287684432463572,
+  "brier_base": 0.7463581695303457,
+  "acc_model": 0.482078853046595,
+  "acc_base": 0.2962962962962963,
+  "mode": "range_spf",
+  "params": {
+    "objective": "poisson",
+    "num_leaves": 50,
+    "learning_rate": 0.036,
+    "min_child_samples": 88,
+    "feature_fraction": 0.735,
+    "lambda_l2": 1.96,
+    "verbosity": -1
+  }
+}

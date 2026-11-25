@@ -1,0 +1,266 @@
+﻿date,league,home_team,away_team,fthg,ftag,xg_h,xg_a
+2024-08-24,Bundesliga,Augsburg,Werder Bremen,2,2,1.32,1.54
+2024-09-01,Bundesliga,Augsburg,Heidenheim,4,0,3.09,0.64
+2024-09-15,Bundesliga,Augsburg,St Pauli,3,1,2.61,0.49
+2024-09-20,Bundesliga,Augsburg,Mainz,2,3,2.8,1.26
+2024-09-28,Bundesliga,Augsburg,RB Leipzig,4,0,2.82,1.07
+2024-10-19,Bundesliga,Augsburg,Freiburg,3,1,1.08,0.87
+2024-10-26,Bundesliga,Augsburg,Dortmund,2,1,0.56,0.78
+2024-11-02,Bundesliga,Augsburg,Wolfsburg,1,1,1.11,0.5
+2024-11-10,Bundesliga,Augsburg,Hoffenheim,0,0,0.97,0.42
+2024-11-22,Bundesliga,Augsburg,Bayern Munich,3,0,4.03,0.15
+2024-11-30,Bundesliga,Augsburg,Bochum,1,0,2.16,0.25
+2024-12-07,Bundesliga,Augsburg,Ein Frankfurt,2,2,1.53,1.17
+2024-12-14,Bundesliga,Augsburg,Leverkusen,0,2,0.44,1.02
+2024-12-21,Bundesliga,Augsburg,Holstein Kiel,5,1,2.49,1.13
+2025-01-12,Bundesliga,Augsburg,Stuttgart,0,1,0.34,2.62
+2025-01-15,Bundesliga,Augsburg,Union Berlin,0,2,0.55,1.42
+2025-01-19,Bundesliga,Augsburg,Werder Bremen,0,2,1.15,1.32
+2025-01-25,Bundesliga,Augsburg,Heidenheim,2,1,1.64,0.95
+2025-02-01,Bundesliga,Augsburg,St Pauli,1,1,0.85,0.19
+2025-02-08,Bundesliga,Augsburg,Mainz,0,0,2.0,0.26
+2025-02-14,Bundesliga,Augsburg,RB Leipzig,0,0,1.05,1.65
+2025-03-02,Bundesliga,Augsburg,Freiburg,0,0,2.22,0.8
+2025-03-08,Bundesliga,Augsburg,Dortmund,0,1,1.11,0.25
+2025-03-15,Bundesliga,Augsburg,Wolfsburg,1,0,0.6,0.76
+2025-03-29,Bundesliga,Augsburg,Hoffenheim,1,1,1.95,0.69
+2025-04-04,Bundesliga,Augsburg,Bayern Munich,1,3,0.57,1.92
+2025-04-12,Bundesliga,Augsburg,Bochum,1,2,1.86,1.03
+2025-04-20,Bundesliga,Augsburg,Ein Frankfurt,0,0,1.14,1.4
+2025-04-26,Bundesliga,Augsburg,Leverkusen,2,0,1.04,0.64
+2025-05-04,Bundesliga,Augsburg,Holstein Kiel,1,3,3.93,2.1
+2025-05-11,Bundesliga,Augsburg,Stuttgart,4,0,4.97,0.38
+2025-05-17,Bundesliga,Augsburg,Union Berlin,1,2,1.58,1.14
+2024-08-25,Bundesliga,Bayern Munich,Wolfsburg,2,3,2.08,2.18
+2024-09-01,Bundesliga,Bayern Munich,Freiburg,2,0,1.63,0.97
+2024-09-14,Bundesliga,Bayern Munich,Holstein Kiel,1,6,0.3,4.13
+2024-09-21,Bundesliga,Bayern Munich,Werder Bremen,0,5,0.0,3.34
+2024-09-28,Bundesliga,Bayern Munich,Leverkusen,1,1,1.19,0.09
+2024-10-06,Bundesliga,Bayern Munich,Ein Frankfurt,3,3,1.5,2.83
+2024-10-19,Bundesliga,Bayern Munich,Stuttgart,4,0,3.62,0.29
+2024-10-27,Bundesliga,Bayern Munich,Bochum,0,5,0.21,3.15
+2024-11-02,Bundesliga,Bayern Munich,Union Berlin,3,0,2.76,0.47
+2024-11-09,Bundesliga,Bayern Munich,St Pauli,0,1,0.08,1.67
+2024-11-30,Bundesliga,Bayern Munich,Dortmund,1,1,0.56,1.83
+2024-12-07,Bundesliga,Bayern Munich,Heidenheim,4,2,3.09,1.17
+2024-12-14,Bundesliga,Bayern Munich,Mainz,2,1,1.64,0.99
+2024-12-20,Bundesliga,Bayern Munich,RB Leipzig,5,1,4.36,0.55
+2025-01-15,Bundesliga,Bayern Munich,Hoffenheim,5,0,3.8,0.22
+2025-01-18,Bundesliga,Bayern Munich,Wolfsburg,3,2,3.23,0.7
+2025-01-25,Bundesliga,Bayern Munich,Freiburg,1,2,0.27,0.79
+2025-02-01,Bundesliga,Bayern Munich,Holstein Kiel,4,3,4.93,2.06
+2025-02-07,Bundesliga,Bayern Munich,Werder Bremen,3,0,4.48,0.15
+2025-02-15,Bundesliga,Bayern Munich,Leverkusen,0,0,2.56,0.07
+2025-02-23,Bundesliga,Bayern Munich,Ein Frankfurt,4,0,4.49,0.49
+2025-02-28,Bundesliga,Bayern Munich,Stuttgart,1,3,0.65,2.3
+2025-03-08,Bundesliga,Bayern Munich,Bochum,2,3,2.73,1.36
+2025-03-15,Bundesliga,Bayern Munich,Union Berlin,1,1,0.8,1.84
+2025-03-29,Bundesliga,Bayern Munich,St Pauli,3,2,4.0,0.84
+2025-04-12,Bundesliga,Bayern Munich,Dortmund,2,2,2.95,1.72
+2025-04-19,Bundesliga,Bayern Munich,Heidenheim,0,4,0.53,3.54
+2025-04-26,Bundesliga,Bayern Munich,Mainz,3,0,1.7,0.92
+2025-05-03,Bundesliga,Bayern Munich,RB Leipzig,3,3,1.75,1.97
+2025-05-17,Bundesliga,Bayern Munich,Hoffenheim,0,4,0.66,2.21
+2024-08-24,Bundesliga,Bochum,RB Leipzig,1,0,0.94,1.32
+2024-09-14,Bundesliga,Bochum,Freiburg,2,1,3.96,1.11
+2024-09-21,Bundesliga,Bochum,Holstein Kiel,2,2,1.32,2.27
+2024-09-27,Bundesliga,Bochum,Dortmund,4,2,4.17,1.03
+2024-10-05,Bundesliga,Bochum,Wolfsburg,1,3,2.29,2.37
+2024-10-19,Bundesliga,Bochum,Hoffenheim,3,1,2.46,2.35
+2024-11-02,Bundesliga,Bochum,Ein Frankfurt,7,2,3.83,2.09
+2024-11-09,Bundesliga,Bochum,Leverkusen,1,1,0.78,1.41
+2024-11-23,Bundesliga,Bochum,Stuttgart,2,0,2.06,0.65
+2024-12-07,Bundesliga,Bochum,Werder Bremen,0,1,1.16,1.21
+2024-12-22,Bundesliga,Bochum,Heidenheim,2,0,1.68,0.51
+2025-01-11,Bundesliga,Bochum,Mainz,2,0,1.72,0.7
+2025-01-15,Bundesliga,Bochum,St Pauli,1,0,1.82,1.15
+2025-01-18,Bundesliga,Bochum,RB Leipzig,3,3,2.76,2.39
+2025-02-01,Bundesliga,Bochum,Freiburg,0,1,0.84,3.33
+2025-02-09,Bundesliga,Bochum,Holstein Kiel,2,2,2.0,2.0
+2025-02-15,Bundesliga,Bochum,Dortmund,2,0,3.37,2.71
+2025-02-22,Bundesliga,Bochum,Wolfsburg,1,1,2.16,1.47
+2025-03-01,Bundesliga,Bochum,Hoffenheim,0,1,1.45,0.53
+2025-03-16,Bundesliga,Bochum,Ein Frankfurt,1,3,1.88,3.29
+2025-03-28,Bundesliga,Bochum,Leverkusen,3,1,2.08,0.7
+2025-04-05,Bundesliga,Bochum,Stuttgart,0,4,0.82,2.65
+2025-04-19,Bundesliga,Bochum,Werder Bremen,1,0,2.71,0.49
+2025-04-27,Bundesliga,Bochum,Union Berlin,1,1,1.52,0.5
+2025-05-02,Bundesliga,Bochum,Heidenheim,0,0,0.46,1.81
+2025-05-10,Bundesliga,Bochum,Mainz,1,4,0.73,2.49
+2025-05-17,Bundesliga,Bochum,St Pauli,0,2,0.8,1.34
+2024-08-24,Bundesliga,Dortmund,Ein Frankfurt,2,0,1.93,1.15
+2024-08-31,Bundesliga,Dortmund,Werder Bremen,0,0,0.28,0.92
+2024-09-13,Bundesliga,Dortmund,Heidenheim,4,2,2.84,1.61
+2024-09-22,Bundesliga,Dortmund,Stuttgart,5,1,3.56,0.61
+2024-10-05,Bundesliga,Dortmund,Union Berlin,2,1,1.53,0.75
+2024-10-18,Bundesliga,Dortmund,St Pauli,2,1,3.97,1.07
+2024-11-02,Bundesliga,Dortmund,RB Leipzig,2,1,3.3,0.24
+2024-11-09,Bundesliga,Dortmund,Mainz,3,1,3.19,0.85
+2024-11-23,Bundesliga,Dortmund,Freiburg,4,0,1.5,1.2
+2024-12-15,Bundesliga,Dortmund,Hoffenheim,1,1,0.43,1.31
+2024-12-22,Bundesliga,Dortmund,Wolfsburg,1,3,1.95,2.41
+2025-01-10,Bundesliga,Dortmund,Leverkusen,2,3,1.49,1.88
+2025-01-14,Bundesliga,Dortmund,Holstein Kiel,4,2,1.96,1.16
+2025-01-17,Bundesliga,Dortmund,Ein Frankfurt,2,0,2.05,0.58
+2025-01-25,Bundesliga,Dortmund,Werder Bremen,2,2,1.49,1.12
+2025-02-01,Bundesliga,Dortmund,Heidenheim,1,2,0.53,2.68
+2025-02-08,Bundesliga,Dortmund,Stuttgart,1,2,1.07,0.45
+2025-02-22,Bundesliga,Dortmund,Union Berlin,6,0,5.44,0.37
+2025-03-01,Bundesliga,Dortmund,St Pauli,0,2,0.29,2.24
+2025-03-15,Bundesliga,Dortmund,RB Leipzig,2,0,2.56,4.1
+2025-03-30,Bundesliga,Dortmund,Mainz,3,1,2.7,0.65
+2025-04-05,Bundesliga,Dortmund,Freiburg,1,4,2.03,3.55
+2025-04-26,Bundesliga,Dortmund,Hoffenheim,2,3,1.19,2.42
+2025-05-03,Bundesliga,Dortmund,Wolfsburg,4,0,2.55,1.36
+2025-05-11,Bundesliga,Dortmund,Leverkusen,2,4,1.9,1.39
+2025-05-17,Bundesliga,Dortmund,Holstein Kiel,3,0,2.56,0.57
+2024-08-31,Bundesliga,Ein Frankfurt,Hoffenheim,3,1,2.69,0.83
+2024-09-14,Bundesliga,Ein Frankfurt,Wolfsburg,1,2,1.23,2.87
+2024-09-29,Bundesliga,Ein Frankfurt,Holstein Kiel,2,4,1.03,2.43
+2024-10-19,Bundesliga,Ein Frankfurt,Leverkusen,2,1,4.07,1.55
+2024-10-27,Bundesliga,Ein Frankfurt,Union Berlin,1,1,1.86,1.54
+2024-11-10,Bundesliga,Ein Frankfurt,Stuttgart,2,3,2.82,1.94
+2024-11-23,Bundesliga,Ein Frankfurt,Werder Bremen,1,0,1.47,0.63
+2024-12-01,Bundesliga,Ein Frankfurt,Heidenheim,0,4,0.86,3.19
+2024-12-15,Bundesliga,Ein Frankfurt,RB Leipzig,2,1,2.5,0.84
+2024-12-21,Bundesliga,Ein Frankfurt,Mainz,1,3,2.59,0.75
+2025-01-11,Bundesliga,Ein Frankfurt,St Pauli,0,1,2.55,2.24
+2025-01-14,Bundesliga,Ein Frankfurt,Freiburg,4,1,2.82,0.59
+2025-01-26,Bundesliga,Ein Frankfurt,Hoffenheim,2,2,2.32,2.3
+2025-02-02,Bundesliga,Ein Frankfurt,Wolfsburg,1,1,1.7,1.46
+2025-02-16,Bundesliga,Ein Frankfurt,Holstein Kiel,3,1,3.03,1.27
+2025-03-01,Bundesliga,Ein Frankfurt,Leverkusen,1,4,1.0,2.37
+2025-03-09,Bundesliga,Ein Frankfurt,Union Berlin,1,2,2.01,0.73
+2025-03-29,Bundesliga,Ein Frankfurt,Stuttgart,1,0,3.69,0.86
+2025-04-05,Bundesliga,Ein Frankfurt,Werder Bremen,2,0,1.23,0.52
+2025-04-13,Bundesliga,Ein Frankfurt,Heidenheim,3,0,3.65,1.29
+2025-04-26,Bundesliga,Ein Frankfurt,RB Leipzig,4,0,2.24,0.32
+2025-05-04,Bundesliga,Ein Frankfurt,Mainz,1,1,1.64,1.39
+2025-05-11,Bundesliga,Ein Frankfurt,St Pauli,2,2,1.82,0.67
+2025-05-17,Bundesliga,Ein Frankfurt,Freiburg,1,3,1.14,2.62
+2024-08-24,Bundesliga,Freiburg,Stuttgart,3,1,3.01,0.37
+2024-09-21,Bundesliga,Freiburg,Heidenheim,0,3,0.38,1.24
+2024-09-28,Bundesliga,Freiburg,St Pauli,0,3,1.1,1.41
+2024-10-05,Bundesliga,Freiburg,Werder Bremen,0,1,0.88,1.58
+2024-10-26,Bundesliga,Freiburg,RB Leipzig,3,1,2.69,1.76
+2024-11-03,Bundesliga,Freiburg,Mainz,0,0,0.46,0.9
+2024-11-08,Bundesliga,Freiburg,Union Berlin,0,0,0.8,2.67
+2024-12-08,Bundesliga,Freiburg,Hoffenheim,1,1,1.49,1.53
+2024-12-13,Bundesliga,Freiburg,Wolfsburg,3,2,2.97,1.85
+2024-12-21,Bundesliga,Freiburg,Leverkusen,5,1,3.26,1.34
+2025-01-11,Bundesliga,Freiburg,Holstein Kiel,3,2,0.75,1.67
+2025-01-18,Bundesliga,Freiburg,Stuttgart,4,0,2.27,0.19
+2025-02-08,Bundesliga,Freiburg,Heidenheim,1,0,1.33,0.43
+2025-02-15,Bundesliga,Freiburg,St Pauli,0,1,0.19,1.25
+2025-02-21,Bundesliga,Freiburg,Werder Bremen,5,0,2.66,1.25
+2025-03-08,Bundesliga,Freiburg,RB Leipzig,0,0,0.51,2.03
+2025-03-15,Bundesliga,Freiburg,Mainz,2,2,1.33,2.93
+2025-03-30,Bundesliga,Freiburg,Union Berlin,1,2,1.01,1.39
+2025-04-19,Bundesliga,Freiburg,Hoffenheim,3,2,1.55,1.95
+2025-04-26,Bundesliga,Freiburg,Wolfsburg,0,1,0.29,1.96
+2025-05-04,Bundesliga,Freiburg,Leverkusen,2,2,0.9,0.23
+2025-05-10,Bundesliga,Freiburg,Holstein Kiel,1,2,0.97,2.02
+2024-08-25,Bundesliga,Heidenheim,St Pauli,0,2,1.16,1.17
+2024-09-28,Bundesliga,Heidenheim,Mainz,0,2,0.37,1.09
+2024-10-06,Bundesliga,Heidenheim,RB Leipzig,0,1,1.08,1.82
+2024-10-27,Bundesliga,Heidenheim,Hoffenheim,0,0,1.58,0.69
+2024-11-02,Bundesliga,Heidenheim,Holstein Kiel,1,0,2.13,1.28
+2024-11-10,Bundesliga,Heidenheim,Wolfsburg,1,3,2.62,1.55
+2024-11-23,Bundesliga,Heidenheim,Leverkusen,5,2,2.03,1.03
+2024-12-15,Bundesliga,Heidenheim,Stuttgart,1,3,0.81,3.46
+2025-01-11,Bundesliga,Heidenheim,Union Berlin,2,0,1.76,1.03
+2025-01-15,Bundesliga,Heidenheim,Werder Bremen,3,3,1.87,1.92
+2025-01-18,Bundesliga,Heidenheim,St Pauli,0,2,0.92,2.23
+2025-02-16,Bundesliga,Heidenheim,Mainz,0,2,0.55,1.95
+2025-02-23,Bundesliga,Heidenheim,RB Leipzig,2,2,1.65,0.83
+2025-03-09,Bundesliga,Heidenheim,Hoffenheim,1,1,1.78,2.31
+2025-03-16,Bundesliga,Heidenheim,Holstein Kiel,3,1,1.66,1.15
+2025-03-29,Bundesliga,Heidenheim,Wolfsburg,0,1,1.24,1.31
+2025-04-05,Bundesliga,Heidenheim,Leverkusen,0,1,1.3,0.37
+2025-04-25,Bundesliga,Heidenheim,Stuttgart,0,1,1.92,0.52
+2025-05-10,Bundesliga,Heidenheim,Union Berlin,0,3,0.53,1.86
+2025-05-17,Bundesliga,Heidenheim,Werder Bremen,1,4,1.76,2.21
+2024-08-24,Bundesliga,Hoffenheim,Holstein Kiel,3,2,3.74,1.97
+2024-09-14,Bundesliga,Hoffenheim,Leverkusen,1,4,1.06,3.42
+2024-09-21,Bundesliga,Hoffenheim,Union Berlin,2,1,1.22,0.38
+2024-09-29,Bundesliga,Hoffenheim,Werder Bremen,3,4,1.79,4.07
+2024-10-06,Bundesliga,Hoffenheim,Stuttgart,1,1,1.73,0.89
+2024-11-02,Bundesliga,Hoffenheim,St Pauli,0,2,0.75,1.12
+2024-11-23,Bundesliga,Hoffenheim,RB Leipzig,4,3,2.6,1.73
+2024-12-01,Bundesliga,Hoffenheim,Mainz,2,0,2.63,0.81
+2025-01-11,Bundesliga,Hoffenheim,Wolfsburg,0,1,1.18,1.49
+2025-01-18,Bundesliga,Hoffenheim,Holstein Kiel,1,3,0.91,0.91
+2025-02-02,Bundesliga,Hoffenheim,Leverkusen,3,1,1.35,1.95
+2025-02-08,Bundesliga,Hoffenheim,Union Berlin,0,4,0.88,3.87
+2025-02-16,Bundesliga,Hoffenheim,Werder Bremen,1,3,0.86,1.92
+2025-02-23,Bundesliga,Hoffenheim,Stuttgart,1,1,0.71,3.67
+2025-03-14,Bundesliga,Hoffenheim,St Pauli,1,0,1.44,0.2
+2025-04-05,Bundesliga,Hoffenheim,RB Leipzig,3,1,1.4,1.19
+2025-04-12,Bundesliga,Hoffenheim,Mainz,2,0,1.42,0.97
+2025-05-09,Bundesliga,Hoffenheim,Wolfsburg,2,2,1.37,1.11
+2024-08-31,Bundesliga,Holstein Kiel,Wolfsburg,0,2,0.89,1.46
+2024-10-05,Bundesliga,Holstein Kiel,Leverkusen,2,2,2.58,1.98
+2024-10-20,Bundesliga,Holstein Kiel,Union Berlin,0,2,0.9,1.28
+2024-10-26,Bundesliga,Holstein Kiel,Stuttgart,2,1,1.91,0.68
+2024-11-09,Bundesliga,Holstein Kiel,Werder Bremen,2,1,2.26,0.88
+2024-11-24,Bundesliga,Holstein Kiel,Mainz,0,3,0.35,2.14
+2024-11-29,Bundesliga,Holstein Kiel,St Pauli,3,1,1.96,1.15
+2024-12-07,Bundesliga,Holstein Kiel,RB Leipzig,0,2,1.15,1.73
+2025-01-24,Bundesliga,Holstein Kiel,Wolfsburg,2,2,2.52,0.27
+2025-02-22,Bundesliga,Holstein Kiel,Leverkusen,0,2,0.49,2.56
+2025-03-02,Bundesliga,Holstein Kiel,Union Berlin,0,1,0.89,0.69
+2025-03-08,Bundesliga,Holstein Kiel,Stuttgart,2,2,1.97,1.07
+2025-03-29,Bundesliga,Holstein Kiel,Werder Bremen,0,3,0.56,1.48
+2025-04-05,Bundesliga,Holstein Kiel,Mainz,1,1,1.65,1.66
+2025-04-12,Bundesliga,Holstein Kiel,St Pauli,1,2,0.69,1.07
+2025-04-19,Bundesliga,Holstein Kiel,RB Leipzig,1,1,2.17,1.02
+2024-08-31,Bundesliga,Leverkusen,RB Leipzig,2,3,3.42,1.51
+2024-09-22,Bundesliga,Leverkusen,Wolfsburg,4,3,1.72,0.84
+2024-10-26,Bundesliga,Leverkusen,Werder Bremen,2,2,1.79,1.31
+2024-11-01,Bundesliga,Leverkusen,Stuttgart,0,0,2.78,0.22
+2024-11-30,Bundesliga,Leverkusen,Union Berlin,1,2,1.11,0.91
+2024-12-07,Bundesliga,Leverkusen,St Pauli,2,1,0.73,2.18
+2025-01-14,Bundesliga,Leverkusen,Mainz,1,0,1.99,0.6
+2025-01-25,Bundesliga,Leverkusen,RB Leipzig,2,2,0.71,2.58
+2025-02-08,Bundesliga,Leverkusen,Wolfsburg,0,0,0.9,1.66
+2025-03-08,Bundesliga,Leverkusen,Werder Bremen,0,2,1.36,1.68
+2025-03-16,Bundesliga,Leverkusen,Stuttgart,3,4,2.85,2.07
+2025-04-12,Bundesliga,Leverkusen,Union Berlin,0,0,0.5,0.51
+2025-04-20,Bundesliga,Leverkusen,St Pauli,1,1,2.32,1.13
+2025-05-17,Bundesliga,Leverkusen,Mainz,2,2,2.9,1.34
+2024-08-30,Bundesliga,St Pauli,Union Berlin,1,0,1.05,0.64
+2024-09-22,Bundesliga,St Pauli,RB Leipzig,0,0,1.67,0.84
+2024-10-05,Bundesliga,St Pauli,Mainz,0,3,0.81,1.3
+2024-10-26,Bundesliga,St Pauli,Wolfsburg,0,0,0.73,0.94
+2024-12-14,Bundesliga,St Pauli,Werder Bremen,0,2,0.52,0.99
+2024-12-21,Bundesliga,St Pauli,Stuttgart,0,1,2.42,2.58
+2025-01-26,Bundesliga,St Pauli,Union Berlin,3,0,1.4,0.99
+2025-02-09,Bundesliga,St Pauli,RB Leipzig,2,0,1.9,0.72
+2025-02-22,Bundesliga,St Pauli,Mainz,2,0,1.36,0.9
+2025-03-08,Bundesliga,St Pauli,Wolfsburg,1,1,1.97,1.24
+2025-04-27,Bundesliga,St Pauli,Werder Bremen,0,0,1.55,0.83
+2025-05-03,Bundesliga,St Pauli,Stuttgart,0,1,0.21,3.56
+2024-08-24,Bundesliga,Union Berlin,Mainz,1,1,1.77,0.73
+2024-09-14,Bundesliga,Union Berlin,RB Leipzig,0,0,1.29,0.86
+2024-11-23,Bundesliga,Union Berlin,Wolfsburg,1,0,0.74,0.63
+2024-12-06,Bundesliga,Union Berlin,Stuttgart,3,2,1.81,1.86
+2024-12-21,Bundesliga,Union Berlin,Werder Bremen,4,1,2.73,1.64
+2025-01-19,Bundesliga,Union Berlin,Mainz,2,1,2.45,1.4
+2025-02-01,Bundesliga,Union Berlin,RB Leipzig,0,0,1.75,0.24
+2025-04-06,Bundesliga,Union Berlin,Wolfsburg,1,0,1.55,1.8
+2025-04-19,Bundesliga,Union Berlin,Stuttgart,4,4,2.16,1.19
+2025-05-03,Bundesliga,Union Berlin,Werder Bremen,2,2,1.35,1.36
+2024-09-15,Bundesliga,Werder Bremen,Mainz,1,2,1.67,1.81
+2024-10-20,Bundesliga,Werder Bremen,Wolfsburg,2,4,2.17,2.15
+2024-11-30,Bundesliga,Werder Bremen,Stuttgart,2,2,2.15,1.67
+2025-01-12,Bundesliga,Werder Bremen,RB Leipzig,4,2,2.65,1.33
+2025-01-31,Bundesliga,Werder Bremen,Mainz,1,0,2.59,1.02
+2025-03-01,Bundesliga,Werder Bremen,Wolfsburg,1,2,2.1,1.12
+2025-04-13,Bundesliga,Werder Bremen,Stuttgart,1,2,1.75,1.65
+2025-05-10,Bundesliga,Werder Bremen,RB Leipzig,0,0,3.21,1.39
+2024-09-28,Bundesliga,Wolfsburg,Stuttgart,2,2,1.04,2.58
+2024-11-30,Bundesliga,Wolfsburg,RB Leipzig,1,5,1.45,2.7
+2024-12-08,Bundesliga,Wolfsburg,Mainz,4,3,1.49,3.02
+2025-02-15,Bundesliga,Wolfsburg,Stuttgart,1,2,1.22,1.76
+2025-04-11,Bundesliga,Wolfsburg,RB Leipzig,2,3,1.84,1.6
+2025-04-19,Bundesliga,Wolfsburg,Mainz,2,2,2.68,1.81
